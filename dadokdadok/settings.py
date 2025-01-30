@@ -59,7 +59,7 @@ ROOT_URLCONF = 'dadokdadok.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,3 +134,6 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+
+LOGIN_URL = '/user/login/'
+LOGOUT_REDIRECT_URL = '/'  # 로그아웃 후 리디렉트할 URL 지정

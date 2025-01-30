@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from user import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,5 @@ urlpatterns = [
     path('reviews/', include('review.urls')),
     path('goals/', include('goal.urls')),
     path('recommendations/', include('recommendation.urls')),
+    path('', views.home, name='home'),  # 루트 URL에 home 뷰 연결
 ]
