@@ -6,7 +6,7 @@ from user import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user.urls')),
-    path('books/', include('book.urls')),
+    path('book/', include('book.urls')),  # ✅ 도서 관리 관련 URL
     path('reviews/', include('review.urls')),
     path('goal/', include('goal.urls')),
     path('recommendation/', include('recommendation.urls')),

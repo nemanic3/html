@@ -146,3 +146,8 @@ REST_FRAMEWORK = {
 
 LOGIN_URL = '/user/login/'
 LOGOUT_REDIRECT_URL = '/'  # 로그아웃 후 리디렉트할 URL 지정
+
+NAVER_CLIENT_ID = "XuZkPyhdBVtFtXAvM4x9"
+NAVER_CLIENT_SECRET = "qc9LqfIhrj"
+NAVER_BOOKS_API_URL = "https://openapi.naver.com/v1/search/book.json"
+
